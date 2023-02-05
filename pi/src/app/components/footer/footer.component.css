@@ -1,0 +1,37 @@
+  .footer{
+    height: 8%;
+   background-color: rgb(255, 255, 255);
+   justify-content: center;
+   position: fixed;
+   bottom: 0;
+  }
+  .bar{
+    background-color: rgb(224, 219, 219);
+    border-radius: 25px;
+    box-shadow: 2px 3px 10px 0px;
+    width: 500px;
+    
+  }
+  .bar:hover{
+    background-color: rgb(224, 219, 219);
+    box-shadow: 2px 3px 10px 0px;
+    color: white;
+  }
+  .mat-button-toggle-checked{
+    background-color:blueviolet;
+  }
+  .mat-button-toggle{
+    border-radius: 25px;
+    border: 0.1px solid rgb(87, 87, 87);
+    font-size: medium;
+    color: black;
+    width: 500px;
+  }
+  .mat-button-toggle:hover{
+    background-color:blueviolet;
+    color: white;
+    width: 500px;
+  }
+  .mat-button-toggle:focus{
+   color: white;
+  }
