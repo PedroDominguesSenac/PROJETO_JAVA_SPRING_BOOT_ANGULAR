@@ -1,0 +1,39 @@
+package com.projetogame.projetointegrador.config;
+
+import java.time.Instant;
+import java.util.Arrays;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+
+import com.projetogame.projetointegrador.entities.Order;
+import com.projetogame.projetointegrador.entities.Usuario;
+import com.projetogame.projetointegrador.repositories.OrderRepository;
+import com.projetogame.projetointegrador.repositories.UsuarioRepository;
+
+@Configuration
+@Profile("test")
+public class TestConfig implements CommandLineRunner {
+
+	@Autowired
+	private UsuarioRepository usuarioRepository;
+	
+	@Autowired
+	private OrderRepository orderRepository;
+
+	@Override
+	public void run(String... args) throws Exception {
+		
+		Usuario us1 = new Usuario(null, "Pedro Domingues", "pedro.d@gmail.com", "77777777", "123456");
+		Usuario us2 = new Usuario(null, "Gabriel Lopes", "gabriel.l@gmail.com", "55555555", "123456");
+		
+		Order o1 = new Order(null, Instant.parse("2019-06-20T19:53:07Z"), us1);
+		Order o2 = new Order(null, Instant.parse("2019-07-21T03:42:10Z"), us2);
+		Order o3 = new Order(null, Instant.parse("2019-07-22T15:21:22Z"), us1);
+	
+		usuarioRepository.saveAll(Arrays.asList(us1, us2));
+		orderRepository.saveAll(Arrays.asList(o1, o2, o3));
+	}	
+}

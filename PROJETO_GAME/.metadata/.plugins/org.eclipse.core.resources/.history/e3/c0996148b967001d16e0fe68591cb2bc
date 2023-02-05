@@ -1,0 +1,5 @@
+package com.projetogame.projetointegrador.resources;
+
+public class UserResource {
+
+}

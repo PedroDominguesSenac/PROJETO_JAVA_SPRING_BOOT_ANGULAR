@@ -1,0 +1,21 @@
+package com.projetogame.projetointegrador.entities;
+
+import java.time.Instant;
+
+public class Payment {
+	
+	private Long id;
+	private Instant moment;
+	
+	private Order order;
+	
+	public Payment() {
+	}
+
+	public Payment(Long id, Instant moment, Order order) {
+		super();
+		this.id = id;
+		this.moment = moment;
+		this.order = order;
+	}
+}

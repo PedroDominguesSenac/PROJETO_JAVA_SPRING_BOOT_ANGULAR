@@ -1,0 +1,11 @@
+package com.projetogame.projetointegrador.entities.pk;
+
+import com.projetogame.projetointegrador.entities.Order;
+import com.projetogame.projetointegrador.entities.Product;
+
+public class OrderItemPK {
+	
+	private Order order;
+	private Product product;
+
+}

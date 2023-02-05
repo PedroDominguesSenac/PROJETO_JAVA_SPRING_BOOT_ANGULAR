@@ -1,0 +1,5 @@
+package com.projetogame.projetointegrador.entities.pk;
+
+public class OrderItemPK {
+
+}

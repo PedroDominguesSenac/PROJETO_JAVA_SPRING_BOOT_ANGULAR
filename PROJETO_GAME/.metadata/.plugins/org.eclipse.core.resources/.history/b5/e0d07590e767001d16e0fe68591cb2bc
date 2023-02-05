@@ -1,0 +1,16 @@
+package com.projetogame.projetointegrador.services;
+
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.projetogame.projetointegrador.entities.Usuario;
+import com.projetogame.projetointegrador.repositories.UsuarioRepository;
+
+public class UsuarioService {
+
+	@Autowired
+	private UsuarioRepository repository;
+	
+	public List<Usuario> findAll() {
+		return repository.findAll();
+	}
+}

@@ -1,0 +1,5 @@
+package com.projetogame.projetointegrador.services;
+
+public class UsuarioService {
+
+}

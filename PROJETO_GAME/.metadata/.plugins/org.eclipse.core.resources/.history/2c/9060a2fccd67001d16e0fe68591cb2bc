@@ -1,0 +1,5 @@
+package com.projetogame.projetointegrador.repositories;
+
+public class UsuarioRepository {
+
+}
